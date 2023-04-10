@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+        <group android:id="@+id/groupmenu">
+
+
+
+
+
+        <item android:id="@+id/dashboard"
+            android:title=""/>
+        <item android:id="@+id/doctors"
+            android:title=""/>
+
+
+        <item android:id="@+id/patients"
+            android:title=""/>
+
+        <item android:id="@+id/appointment"
+            android:title=""/>
+        <item android:id="@+id/prescription"
+            android:title=""/>
+
+        <item android:id="@+id/drugs"
+            android:title=""/>
+        <item android:id="@+id/test"
+            android:title=""/>
+
+        <item android:id="@+id/calender"
+            android:title=""/>
+        <item android:id="@+id/reports"
+            android:title=""/>
+        <item android:id="@+id/billing"
+            android:title=""/>
+
+
+        <item android:id="@+id/settings"
+            android:title=""/>
+        </group>
+
+
+
+
+</menu>

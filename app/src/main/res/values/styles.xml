@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MyTextInputLayoutStyle" parent="
+">
+        <item name="boxStrokeWidth">2dp</item>
+        <item name="boxStrokeColor">@color/custom_border_color</item>
+        <item name="android:background">@drawable/edit_bg</item>
+    </style>
+</resources>
