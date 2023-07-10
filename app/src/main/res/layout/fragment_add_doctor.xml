@@ -33,7 +33,6 @@
                 android:layout_height="wrap_content"
                 android:drawableEnd="@drawable/ic_arrowright"
                 android:text="Home"
-                android:id="@+id/txt_home"
                 android:textColor="#7C59FF"
                 android:textSize="16sp"
                 />
@@ -89,7 +88,6 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="320dp"
                 android:layout_height="wrap_content"
-                android:id="@+id/textinputlayout1"
                 android:layout_marginTop="25dp"
                 app:boxStrokeColor="@color/custom_border_color"
                 app:boxStrokeWidth="1dp"
@@ -102,7 +100,6 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="315dp"
                     android:layout_height="wrap_content"
-                    android:id="@+id/edit_firstname"
                     android:padding="15dp"/>
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -290,7 +287,6 @@
             <Spinner
                 android:layout_width="320dp"
                 android:layout_height="45dp"
-                android:id="@+id/language_spinner"
                 android:background="@drawable/custom_spinner"
                 android:layout_marginTop="12dp"
                 android:padding="15dp"
@@ -321,15 +317,12 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="320dp"
                 android:layout_height="100dp"
-                android:id="@+id/textinputlayout2"
-
 
 
                 android:layout_marginTop="8dp">
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="320dp"
                     android:layout_height="100dp"
-                    android:id="@+id/edit_lastname"
 
                     android:hint="Bio"
                     android:background="@drawable/edit_bg"

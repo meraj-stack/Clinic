@@ -86,8 +86,8 @@ public class NavListAdapter extends BaseExpandableListAdapter {
         int colorres = isExpanded ? R.color.pressedcolor :R.color.unpresscolor;
         int imgres = isExpanded ? R.drawable.ic_baseline_keyboard_arrow_down_24 : R.drawable.ic_arrowright;
         iconright.setImageResource(imgres);
-        iconleft.setColorFilter(ContextCompat.getColor(context, colorres), PorterDuff.Mode.SRC_IN);
-        txt_itemtext.setTextColor(ContextCompat.getColor(context, colorres));
+
+
         if (navitems.get(groupPosition).getSubItems() != null) {
             convertView.setOnClickListener(new View.OnClickListener() {
                 @Override

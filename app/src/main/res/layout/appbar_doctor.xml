@@ -6,11 +6,11 @@
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#00C0FF"
         >
         <androidx.appcompat.widget.Toolbar
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:background="@color/white"
             android:id="@+id/toolbar">
             <LinearLayout
                 android:layout_width="350dp"
@@ -25,10 +25,10 @@
                     android:src="@drawable/doctorlogo"/>
 
                 <ImageView
-                    android:layout_width="35dp"
-                    android:layout_height="35dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
                     android:id="@+id/hamburger"
-                    android:src="@drawable/menu"
+                    android:src="@drawable/hamburgercom"
                     android:layout_marginLeft="10dp"/>
 
 
@@ -48,16 +48,21 @@
 
                 </LinearLayout>
                 <LinearLayout
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:orientation="vertical"
-                    android:background="@drawable/bg_layout3"
-                    android:layout_marginLeft="120dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="100dp"
                     android:gravity="center">
                     <ImageView
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:src="@drawable/notification"/>
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/profile"/>
+
                 </LinearLayout>
 
 

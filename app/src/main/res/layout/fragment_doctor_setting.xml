@@ -1,14 +1,269 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".DoctorSettingFragment">
-
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:orientation="vertical"
+        android:background="#f8fcfd">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:textSize="14sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="sans-serif-light"
+        android:drawableEnd="@drawable/ic_baseline_right_arrow"
+        android:textColor="@color/iconpressed"/>
 
-</FrameLayout>
+    <LinearLayout
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/front_layout"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:text="Reset Password"
+            android:textColor="@color/iconunpressed"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-light"/>
+        <View
+            android:layout_width="310dp"
+            android:layout_height="1dp"
+            android:background="#f8fcfd"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email Id :"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            />
+
+        <EditText
+            android:id="@+id/edit_mail"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_bg"
+            android:fontFamily="sans-serif-light"
+            android:hint="Enter Registere Email"
+            android:padding="10dp"
+            android:textColor="@color/iconunpressed"
+            android:textSize="14sp" />
+        <Button
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_prescription"
+            android:text="Send otp"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-light"
+            android:id="@+id/btn_sendotp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OTP :"
+            android:textSize="14sp"
+            android:id="@+id/txt_otp"
+            android:textColor="@color/black"
+            android:visibility="invisible"
+
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            />
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/front_layout"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:text="Edit User Information"
+            android:textColor="@color/iconunpressed"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-light"/>
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:layout_width="82dp"
+            android:layout_height="82dp"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:id="@+id/doctorImage"
+            android:src="@drawable/profile2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Update Profile"
+            android:textColor="#00C0FF"
+            android:layout_marginTop="5dp"
+            android:textSize="13sp"
+            android:fontFamily="sans-serif-light"
+            android:id="@+id/txt_uploadimage"
+            />
+        <EditText
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edittext_bg"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-light"
+            android:hint="First Name"
+            android:id="@+id/ed_Firstname"/>
+        <EditText
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_bg"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-light"
+            android:hint="Last Name"
+            android:id="@+id/ed_Lastname"/>
+        <EditText
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_bg"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-light"
+            android:hint="Email"
+            android:id="@+id/ed_Email"/>
+        <EditText
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_bg"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-light"
+            android:hint="Gender"
+            android:id="@+id/ed_Gender"/>
+        <EditText
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_bg"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-light"
+            android:hint="D.O.B"
+            android:id="@+id/ed_DOB"/>
+        <EditText
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_bg"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-light"
+            android:hint="Contact"
+            android:id="@+id/ed_Contact"/>
+        <EditText
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_bg"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-light"
+            android:hint="City"
+            android:id="@+id/ed_City"/>
+        <EditText
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_bg"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-light"
+            android:hint="Country"
+            android:id="@+id/ed_Country"/>
+        <EditText
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_bg"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-light"
+            android:hint="Specialization"
+            android:id="@+id/ed_Specialization"/>
+
+        <EditText
+            android:layout_width="310dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_bg"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-light"
+            android:hint="Addresss"
+            android:id="@+id/ed_Address"/>
+        <Button
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/btn_prescription"
+            android:text="Save changes"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-light"
+            android:id="@+id/btn_saveChanges"/>
+
+    </LinearLayout>
+    </LinearLayout>
+
+
+
+</ScrollView>

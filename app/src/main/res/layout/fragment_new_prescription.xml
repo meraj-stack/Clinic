@@ -1,14 +1,331 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".NewPrescriptionFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:orientation="vertical"
+        android:background="#f2fafc">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:textSize="14sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="sans-serif-light"
+            android:drawableEnd="@drawable/ic_baseline_right_arrow"
+            android:textColor="@color/iconpressed"/>
 
-</FrameLayout>
+
+        <LinearLayout
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/front_layout"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp"
+                android:text="Patient Information"
+                android:textColor="@color/iconunpressed"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-light"/>
+            <View
+                android:layout_width="310dp"
+                android:layout_height="1dp"
+                android:background="#f2fafc"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Patient Name :"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-light"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                />
+
+            <Spinner
+                android:layout_width="310dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/spinners_background"
+                android:id="@+id/spinner_patientname"/>
+
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/front_layout"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:text="Drugs List"
+            android:textColor="@color/iconunpressed"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-light"/>
+        <View
+            android:layout_width="310dp"
+            android:layout_height="1dp"
+            android:background="#f2fafc"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            />
+
+        <Spinner
+            android:layout_width="310dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="15dp"
+
+            android:layout_gravity="center"
+            android:background="@drawable/spinners_background"
+            android:id="@+id/spinner_drugname"/>
+
+        <Spinner
+            android:layout_width="310dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/spinners_background"
+            android:id="@+id/spinner_dose"/>
+        <EditText
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_bg"
+            android:padding="10dp"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-light"
+            android:hint="Mg/Ml"
+            android:textColor="@color/black"
+            android:id="@+id/ed_quantity"/>
+        <EditText
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_bg"
+            android:padding="10dp"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-light"
+            android:hint="Duration"
+            android:textColor="@color/black"
+            android:id="@+id/ed_duration"/>
+
+        <EditText
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_bg"
+            android:textColor="@color/black"
+            android:padding="10dp"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-light"
+            android:hint="Quantity"
+            android:id="@+id/ed_quantity2"/>
+        <EditText
+            android:layout_width="310dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_bg"
+            android:padding="10dp"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-light"
+            android:hint="Advice/Comment"
+            android:textColor="@color/black"
+            android:id="@+id/ed_advice"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Add Drug"
+            android:layout_gravity="right"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/btn_prescription"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/white"
+            android:id="@+id/btn_adddrug"
+            android:layout_marginBottom="10dp"/>
+
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/front_layout"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp"
+                android:text="Tests List"
+                android:textColor="@color/iconunpressed"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-light"/>
+            <View
+                android:layout_width="310dp"
+                android:layout_height="1dp"
+                android:background="#f2fafc"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                />
+
+            <Spinner
+                android:layout_width="310dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="10dp"
+
+                android:layout_gravity="center"
+                android:background="@drawable/spinners_background"
+                android:id="@+id/spinner_testname"/>
+
+            <EditText
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_bg"
+                android:textColor="@color/black"
+                android:padding="10dp"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif-light"
+                android:hint="Description"
+                android:id="@+id/ed_description"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Add Test"
+                android:layout_gravity="right"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/btn_prescription"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/white"
+                android:id="@+id/btn_addtest"
+                android:layout_marginBottom="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/front_layout"
+            android:layout_gravity="center"
+
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:id="@+id/txt_pateintname"/>
+            <TextView
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:id="@+id/txt_display"
+                android:visibility="invisible"
+                />
+            <TextView
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:text="Recommended Test :" />
+            <TextView
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:id="@+id/txt_testlist"
+                android:visibility="invisible"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical"
+            android:background="@drawable/front_layout"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Create prescription"
+                android:layout_gravity="right"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/btn_prescription"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/white"
+                android:id="@+id/btn_createpres"
+                android:layout_marginBottom="10dp"/>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</ScrollView>

@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewPatientFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="#b9b2ff"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:background="@drawable/imageview_border"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/img_pProfile"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#f1efff"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="First Name"
+                android:layout_margin="10dp"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-light"/>
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:layout_margin="10dp"
+                android:textColor="@color/black"
+                android:id="@+id/txt_Fname"
+                android:fontFamily="sans-serif-light"/>
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="330dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:background="#F0F0F0"/>
+        <LinearLayout
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Last Name"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-light"/>
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:layout_margin="10dp"
+                android:textColor="@color/black"
+                android:id="@+id/txt_Lname"
+                android:fontFamily="sans-serif-light"/>
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="330dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:background="#F0F0F0"/>
+        <LinearLayout
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#f1efff"
+            android:layout_gravity="center"
+
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-light"/>
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:layout_margin="10dp"
+                android:id="@+id/txt_Email"
+                android:fontFamily="sans-serif-light"/>
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="330dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:background="#F0F0F0"/>
+        <LinearLayout
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Mobile no."
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-light"/>
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:layout_margin="10dp"
+                android:id="@+id/txt_Mobile"
+                android:fontFamily="sans-serif-light"/>
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="330dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:background="#F0F0F0"/>
+        <LinearLayout
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#f1efff"
+            android:layout_gravity="center"
+
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="D.O.B"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-light"/>
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:layout_margin="10dp"
+                android:textColor="@color/black"
+                android:id="@+id/txt_Dob"
+                android:fontFamily="sans-serif-light"/>
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="330dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:background="#F0F0F0"/>
+        <LinearLayout
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Marital Status"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-light"/>
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:layout_margin="10dp"
+                android:textColor="@color/black"
+                android:id="@+id/txt_Marital"
+                android:fontFamily="sans-serif-light"/>
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="330dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:background="#F0F0F0"/>
+        <LinearLayout
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#f1efff"
+            android:layout_gravity="center"
+
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Sex"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-light"/>
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:layout_margin="10dp"
+                android:textColor="@color/black"
+                android:id="@+id/txt_Sex"
+                android:fontFamily="sans-serif-light"/>
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="330dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:background="#F0F0F0"/>
+        <LinearLayout
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Blood Group"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-light"/>
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:layout_margin="10dp"
+                android:id="@+id/txt_Bg"
+                android:fontFamily="sans-serif-light"/>
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="330dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:background="#F0F0F0"/>
+        <LinearLayout
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#f1efff"
+            android:layout_gravity="center"
+
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Patient Weight"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-light"/>
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:layout_margin="10dp"
+                android:id="@+id/txt_Weight"
+                android:fontFamily="sans-serif-light"/>
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="330dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:background="#F0F0F0"/>
+        <LinearLayout
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Patient Hieght"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-light"/>
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:layout_margin="10dp"
+                android:textColor="@color/black"
+                android:id="@+id/txt_Height"
+                android:fontFamily="sans-serif-light"/>
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="330dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:background="#F0F0F0"/>
+        <LinearLayout
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:background="#f1efff"
+
+
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:textSize="15dp"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-light"/>
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:layout_margin="10dp"
+                android:id="@+id/txt_Address"
+                android:fontFamily="sans-serif-light"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Patient History"
+                android:textSize="15dp"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-light"/>
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:layout_margin="10dp"
+                android:id="@+id/txt_Phistory"
+                android:fontFamily="sans-serif-light"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</ScrollView>

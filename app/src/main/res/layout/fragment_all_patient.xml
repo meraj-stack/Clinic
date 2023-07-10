@@ -1,14 +1,141 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#e9ecef"
+    android:orientation="vertical"
     tools:context=".AllPatientFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:background="#e9ecef"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:textSize="14sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="sans-serif-light"
+            android:drawableEnd="@drawable/ic_baseline_right_arrow"
+            android:textColor="@color/frontcolor2"/>
 
-</FrameLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@color/white">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/iconunpressed"
+            android:text="All Patients"
+            android:fontFamily="sans-serif-light"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_save"
+                android:text="New Patients"
+                android:textSize="13sp"
+                android:textColor="@color/white"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="120dp"
+                />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e9ecef"
+            android:layout_marginTop="10dp"/>
+        <androidx.appcompat.widget.SearchView
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/searchbar_bg"
+            android:hint="search name"
+
+            />
+        <LinearLayout
+            android:layout_width="335dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:background="#e9ecef"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:text="First Name"
+                android:layout_marginLeft="40dp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/black"
+                android:textSize="13sp"/>
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="Last Name"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/black"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text=" Mobile no."
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/black"
+                android:textSize="13sp"/>
+            <TextView
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:text="Action"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:fontFamily="sans-serif-light"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="335dp"
+            android:layout_height="1dp"
+            android:background="@color/iconunpressed"
+            android:layout_gravity="center"
+            />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recycler"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

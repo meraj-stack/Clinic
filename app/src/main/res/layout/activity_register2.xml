@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/adddoctor_bg"
+
+    tools:context=".RegisterActivity2">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/adddoctor_bg">
+
+
+
+        <LinearLayout
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+           android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:gravity="center"
+            android:background="@drawable/linear_bg"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Personal Information"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:textColor="@color/iconunpressed"
+                android:fontFamily="sans-serif-light"
+                android:textStyle="bold"
+                android:layout_gravity="start"
+                android:layout_marginLeft="10dp"/>
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:layout_width="82dp"
+                android:layout_height="82dp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/image"
+                android:src="@drawable/profile2"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Click to Uplaod Profile"
+                android:textColor="#00C0FF"
+                android:layout_marginTop="5dp"
+                android:textSize="13sp"
+                android:fontFamily="sans-serif-light"
+                android:id="@+id/txt_uploadimage"
+                />
+
+            <EditText
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittext_bg"
+                android:padding="10dp"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif-light"
+                android:hint="First Name"
+                android:id="@+id/ed_firstname"/>
+            <EditText
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_bg"
+                android:padding="10dp"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif-light"
+                android:hint="Last Name"
+                android:id="@+id/ed_lastname"/>
+            <Spinner
+                android:layout_width="320dp"
+                android:layout_height="38dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/spinners_background"
+                android:id="@+id/spinner_gender"
+                android:padding="10dp"/>
+            <EditText
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_bg"
+                android:padding="10dp"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif-light"
+                android:hint="Date Of Birth"
+                android:id="@+id/ed_dob"/>
+
+            <EditText
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_bg"
+                android:padding="10dp"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif-light"
+                android:hint="Contact"
+                android:id="@+id/ed_contact"/>
+
+            <EditText
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_bg"
+                android:padding="10dp"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif-light"
+                android:hint="City"
+                android:id="@+id/ed_city"/>
+            <EditText
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_bg"
+                android:padding="10dp"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif-light"
+                android:hint="Country"
+                android:id="@+id/ed_country"/>
+            <Spinner
+                android:layout_width="320dp"
+                android:layout_height="38dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/spinners_background"
+                android:padding="10dp"
+                android:id="@+id/spinner_language"/>
+            <Spinner
+                android:layout_width="320dp"
+                android:layout_height="38dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/spinners_background"
+                android:padding="10dp"
+                android:id="@+id/spinner_usertype"/>
+            <Spinner
+                android:layout_width="320dp"
+                android:layout_height="38dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:background="@drawable/spinners_background"
+                android:id="@+id/spinner_specialization"/>
+
+
+            <EditText
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_bg"
+                android:padding="10dp"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif-light"
+                android:hint="Username"
+                android:id="@+id/ed_username"/>
+            <EditText
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_bg"
+                android:padding="10dp"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif-light"
+                android:hint="Password"
+                android:id="@+id/ed_password"/>
+            <EditText
+                android:layout_width="320dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_bg"
+                android:padding="10dp"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif-light"
+                android:hint="Addresss"
+                android:id="@+id/ed_address"/>
+            <EditText
+                android:layout_width="320dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_bg"
+                android:padding="10dp"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif-light"
+                android:hint="Bio"
+                android:id="@+id/ed_bio"/>
+
+
+
+            <Button
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/login_btn"
+                android:text="Add Doctor"
+                android:textSize="14sp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:id="@+id/btn_register"
+                android:fontFamily="sans-serif-light"/>
+
+
+    </LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,7 @@
+configurations {
+    bom
+}
+
+dependencies {
+    bom "com.twilio.sdk:twilio:9.7.0"
+}

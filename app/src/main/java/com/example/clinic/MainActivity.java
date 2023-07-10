@@ -9,6 +9,12 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.annotation.SuppressLint;
+import android.content.ComponentName;
+import android.content.Context;
+import android.content.pm.PackageManager;
+import android.graphics.Bitmap;
+import android.graphics.Canvas;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -22,6 +28,8 @@ import android.widget.TextView;
 
 import com.google.android.material.navigation.NavigationView;
 
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -37,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+    @SuppressLint("WrongThread")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,6 +55,26 @@ public class MainActivity extends AppCompatActivity {
         nav_view = findViewById(R.id.nav_view);
         hamburger = findViewById(R.id.hamburger);
         elv = findViewById(R.id.expandableListView);
+
+        // Inflate the XML layout
+        View iconView = LayoutInflater.from(this).inflate(R.layout.launcher_icon, null);
+
+        // Create a bitmap from the XML shape
+        Bitmap bitmap = createBitmapFromXml(iconView);
+
+        // Save the bitmap as a PNG file
+        try {
+            FileOutputStream fos = openFileOutput("launcher_icon.png", Context.MODE_PRIVATE);
+            bitmap.compress(Bitmap.CompressFormat.PNG, 100, fos);
+            fos.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        // Set the generated image as the launcher icon
+        setLauncherIcon();
+
+
 
 
 
@@ -253,6 +282,67 @@ public class MainActivity extends AppCompatActivity {
 
         return navitem;
 
+    }
+
+    private Bitmap createBitmapFromXml(View iconView) {
+        // Measure the view to get its dimensions
+        iconView.measure(
+                View.MeasureSpec.makeMeasureSpec(0, View.MeasureSpec.UNSPECIFIED),
+                View.MeasureSpec.makeMeasureSpec(0, View.MeasureSpec.UNSPECIFIED)
+        );
+        iconView.layout(0, 0, iconView.getMeasuredWidth(), iconView.getMeasuredHeight());
+
+        // Create a bitmap with the measured dimensions
+        Bitmap bitmap = Bitmap.createBitmap(
+                iconView.getMeasuredWidth(),
+                iconView.getMeasuredHeight(),
+                Bitmap.Config.ARGB_8888
+        );
+
+        // Draw the view onto the bitmap
+        Canvas canvas = new Canvas(bitmap);
+        iconView.draw(canvas);
+
+        return bitmap;
+    }
+
+    private void setLauncherIcon() {
+        PackageManager packageManager = getPackageManager();
+        ComponentName componentName = new ComponentName(this, MainActivity.class);
+
+        // Get the path to the saved PNG file
+        String iconFilePath = getFilesDir() + "/launcher_icon.png";
+
+        // Set the generated image as the launcher icon
+        packageManager.setComponentEnabledSetting(
+                componentName,
+                PackageManager.COMPONENT_ENABLED_STATE_DISABLED,
+                PackageManager.DONT_KILL_APP
+        );
+
+        packageManager.setComponentEnabledSetting(
+                componentName,
+                PackageManager.COMPONENT_ENABLED_STATE_ENABLED,
+                PackageManager.DONT_KILL_APP
+        );
+
+        packageManager.setComponentEnabledSetting(
+                componentName,
+                PackageManager.COMPONENT_ENABLED_STATE_DEFAULT,
+                PackageManager.DONT_KILL_APP
+        );
+
+        packageManager.setComponentEnabledSetting(
+                componentName,
+                PackageManager.COMPONENT_ENABLED_STATE_ENABLED,
+                PackageManager.DONT_KILL_APP
+        );
+
+        packageManager.setComponentEnabledSetting(
+                componentName,
+                PackageManager.COMPONENT_ENABLED_STATE_DEFAULT,
+                PackageManager.DONT_KILL_APP
+        );
     }
 
 
